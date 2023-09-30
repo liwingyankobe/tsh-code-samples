@@ -1,0 +1,5 @@
+RewriteBase "/"
+
+RewriteCond %{HTTP_COOKIE} ^.*finale=([0-9]*).*$
+RewriteCond %{REQUEST_URI} ^.*(html|htm|php).*$
+RewriteRule ^.*$ central.php [L]
